@@ -1,0 +1,55 @@
+const int YAxis = 1; //Declaring where the X axis and Y axis of the joystick pins are wired
+const int XAxis = 2; //Of course analog inputs
+const int buttonPin = 7;     // the number of the pushbutton pin
+const int ledPin = 13;
+const int sensorValue = 3;
+
+int volume = 0;
+int buttonState = 0;         // variable for reading the pushbutton status
+int lastButtonState = 0;
+int tiltSW = 0;
+
+void setup() {
+ Serial.begin(115200); //Setting the Serial monitor baude rate and launching
+ pinMode(XAxis, INPUT); 
+ pinMode(YAxis, INPUT); 
+ 
+ // initialize the LED pin as an output:
+ pinMode(ledPin, OUTPUT);
+ pinMode(buttonPin, INPUT);
+}
+void loop() {
+
+    // read the input on analog pin 0:
+  volume = analogRead(sensorValue);
+  
+ // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+    // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if ((buttonState == HIGH)&& (lastButtonState == LOW)) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+    tiltSW = 1;
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+    tiltSW = 0;
+  }
+  lastButtonState = buttonState;
+
+ int X=analogRead(XAxis); //Reading from the X axis potentiometer
+ X = X*0.3519;
+
+ int Y=analogRead(YAxis);//Reading from the Y axis potentiometer
+ Y = Y*0.3519;
+
+ Serial.print(X);
+ Serial.print("  ");
+ Serial.print(Y);
+ Serial.print("  ");
+ Serial.print(tiltSW);
+ Serial.print("  ");
+ Serial.println(volume);
+   delay (100);
+}
