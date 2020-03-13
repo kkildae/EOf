@@ -1,0 +1,2424 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "box",
+		"rect" : [ 222.0, 150.0, 792.0, 424.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 492.0, 150.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 107.0, 436.52996826171875, 105.79998779296875, 47.0 ],
+					"text" : "Mouse acts as controller without arduino."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 300.0, 478.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 216.510101318359375, 436.52996826171875, 52.0, 20.0 ],
+					"text" : "Volume"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 109.0, 487.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 107.0, 305.0, 105.79998779296875, 20.0 ],
+					"text" : "Change Image"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 644.4105224609375, 17.0, 29.0, 22.0 ],
+					"text" : "r b2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 644.4105224609375, 96.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 644.4105224609375, 53.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 409.0, 314.8660888671875, 150.0, 47.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Scales arduino potentiometer to the gain meter."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 578.4105224609375, 96.0, 56.0, 22.0 ],
+					"text" : "r counter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"clipheight" : 20.0,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Button press 2_01.wav",
+								"filename" : "Button press 2_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Door open_01.wav",
+								"filename" : "Door open_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Door prees_01.wav",
+								"filename" : "Door prees_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Rain_01.wav",
+								"filename" : "Rain_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/SOE 1_01.wav",
+								"filename" : "SOE 1_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Soe2_01.wav",
+								"filename" : "Soe2_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Sound1.wav",
+								"filename" : "Sound1.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Sound2.wav",
+								"filename" : "Sound2.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Sound3.mp3",
+								"filename" : "Sound3.mp3",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Sound4.wav",
+								"filename" : "Sound4.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Sounds/Walking_01.wav",
+								"filename" : "Walking_01.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-28",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 578.4105224609375, 152.0, 150.0, 92.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "mc.ezdac~",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 578.4105224609375, 469.0, 45.0, 45.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 227.410491943359375, 682.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 474.410491943359375, 255.0, 110.0, 22.0 ],
+					"text" : "scale 0 1023 0 154"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 474.410491943359375, 208.50537109375, 29.0, 22.0 ],
+					"text" : "r n4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 633.4105224609375, 314.8660888671875, 30.500003814697266, 131.79998779296875 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 242.910491943359375, 328.72998046875, 25.599609375, 105.79998779296875 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"interpinlet" : 1,
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 578.4105224609375, 314.8660888671875, 42.013164520263672, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 216.510101318359375, 328.72998046875, 24.013164520263672, 105.79998779296875 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 458.0, 128.0, 31.0, 22.0 ],
+					"text" : "s b2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 177.0, 183.0, 56.0, 22.0 ],
+					"text" : "r counter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 52.0, 226.0, 58.0, 22.0 ],
+					"text" : "s counter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"clipheight" : 20.0,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/image_1.jpg",
+								"filename" : "image_1.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/image_2.jpg",
+								"filename" : "image_2.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/Image_3.jpg",
+								"filename" : "Image_3.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/Image_4.jpg",
+								"filename" : "Image_4.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/IMage_5.jpg",
+								"filename" : "IMage_5.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/Image_6.jpg",
+								"filename" : "Image_6.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/Image_7.jpg",
+								"filename" : "Image_7.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:/Users/Kiera/Desktop/EOfE_Coursework/Images/Image_8.jpg",
+								"filename" : "Image_8.jpg",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u211000302" ],
+									"dim" : [ 1, 1 ],
+									"rate" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"texture_name" : [ "u504000300" ],
+									"adapt" : [ 1 ],
+									"looppoints_ms" : [ 0, 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"time_ms" : [ 0 ],
+									"cache_size" : [ 0.100000001490116 ],
+									"usesrcrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"moviefile" : [ "" ],
+									"fps" : [ 0.0 ],
+									"engine" : [ "viddll" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints_secs" : [ 0.0, 0.0 ],
+									"usedstrect" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"looppoints" : [ 0, 0 ],
+									"autostart" : [ 1 ],
+									"timescale" : [ 600 ],
+									"framecount" : [ 0 ],
+									"loopend" : [ 0 ],
+									"position" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"duration" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-22",
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "dictionary" ],
+					"patching_rect" : [ 218.0, 226.0, 150.0, 92.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 218.0, 16.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 283.5, 473.0, 150.0, 33.0 ],
+					"text" : "Creates sphere and add the texture to it."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 45.0, 150.0, 33.0 ],
+					"text" : "Creates the world for the jit object."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 12.0, 146.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 107.0, 328.72998046875, 105.79998779296875, 105.79998779296875 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 242.0, 183.0, 150.0, 33.0 ],
+					"text" : "Subpatches and bangs sent to them"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 83.0, 84.0, 150.0, 60.0 ],
+					"text" : "If the arduino tilt sensor is activiated then bang the counter to next photo and sound."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 218.0, 473.0, 52.0, 22.0 ],
+					"text" : "r control"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 242.0, 152.0, 31.0, 22.0 ],
+					"text" : "s b1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 3,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 568.0, 180.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 170.0, 321.0, 150.0, 47.0 ],
+									"text" : "Allows the sphere to be controlled by mouse or different inputs."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 531.0, 197.0, 150.0, 47.0 ],
+									"text" : "Puts the jit object in the position for the view to be dirctly inside of it."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 215.0, 184.0, 153.0, 47.0 ],
+									"text" : "Takes input from the serial port to control the roation of the jit object."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 434.0, 81.0, 29.0, 22.0 ],
+									"text" : "r b1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 498.0, 81.0, 29.0, 22.0 ],
+									"text" : "r b1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-7",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 498.0, 128.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-3",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 434.0, 128.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 322.0, 372.0, 54.0, 22.0 ],
+									"text" : "s control"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 559.0, 32.0, 29.0, 22.0 ],
+									"text" : "r b1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 242.0, 73.0, 29.0, 22.0 ],
+									"text" : "r n2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 198.0, 73.0, 29.0, 22.0 ],
+									"text" : "r n1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 559.0, 81.0, 29.5, 22.0 ],
+									"text" : "+ 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-43",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 463.0, 233.0, 50.0, 22.0 ],
+									"text" : "0 0 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-41",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 559.0, 128.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-33",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 434.0, 197.0, 64.0, 22.0 ],
+									"text" : "pack 0 0 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"attr" : "position",
+									"id" : "obj-60",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 434.0, 259.0, 384.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-59",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 242.0, 108.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-50",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 198.0, 143.0, 64.0, 22.0 ],
+									"text" : "pack 0 0 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 198.0, 108.0, 29.5, 22.0 ],
+									"text" : "- 90"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 124.0, 184.0, 50.0, 35.0 ],
+									"text" : "85 179 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"attr" : "rotatexyz",
+									"id" : "obj-20",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 198.0, 259.0, 223.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 322.0, 325.0, 109.0, 22.0 ],
+									"text" : "jit.gl.handle sphere"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"midpoints" : [ 207.5, 312.0, 331.5, 312.0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-50", 0 ],
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 0 ],
+									"midpoints" : [ 443.5, 153.0, 443.5, 153.0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-43", 1 ],
+									"midpoints" : [ 443.5, 228.0, 503.5, 228.0 ],
+									"order" : 0,
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"order" : 1,
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 2 ],
+									"midpoints" : [ 568.5, 183.0, 488.5, 183.0 ],
+									"source" : [ "obj-41", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"order" : 0,
+									"source" : [ "obj-50", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 1 ],
+									"midpoints" : [ 207.5, 180.0, 164.5, 180.0 ],
+									"order" : 1,
+									"source" : [ "obj-50", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-50", 1 ],
+									"source" : [ "obj-59", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"midpoints" : [ 443.5, 312.0, 331.5, 312.0 ],
+									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 1 ],
+									"midpoints" : [ 507.5, 183.0, 466.0, 183.0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 375.0, 152.0, 68.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p controller"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 97.0, 29.0, 22.0 ],
+					"text" : "r n3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 0,
+							"revision" : 3,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 338.0, 104.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 170.0, 70.0, 29.0, 22.0 ],
+									"text" : "r b1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 349.5, 521.0, 31.0, 22.0 ],
+									"text" : "s n4"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 349.5, 461.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 18.0, 454.0, 152.0, 60.0 ],
+									"text" : "Seperates the four input data from each other to then send to other parts of the program."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 28.0, 313.5, 150.0, 47.0 ],
+									"text" : "Converts ASCII code into symbols and teh into integers."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 18.0, 192.0, 150.0, 47.0 ],
+									"text" : "Creates group that ends after 13 and 10. Which is the end of the data pack."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 286.0, 113.0, 150.0, 33.0 ],
+									"text" : "Detects serial port and takes the data from it."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 286.0, 521.0, 31.0, 22.0 ],
+									"text" : "s n3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 226.5, 521.0, 31.0, 22.0 ],
+									"text" : "s n2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 166.5, 521.0, 31.0, 22.0 ],
+									"text" : "s n1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-22",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 286.0, 461.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 290.5, 420.5, 65.0, 35.0 ],
+									"text" : "175 179 0 883"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 13.0,
+									"id" : "obj-38",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 226.5, 461.0, 50.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 13.0,
+									"id" : "obj-39",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 166.5, 461.0, 50.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 13.0,
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "int", "int", "int", "int" ],
+									"patching_rect" : [ 166.5, 420.5, 107.0, 24.0 ],
+									"text" : "unpack 0 0 0 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 336.0, 168.0, 55.0, 22.0 ],
+									"text" : "print raw"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 265.5, 373.5, 50.0, 49.0 ],
+									"text" : "\"175  179  0  883\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-30",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 265.5, 168.0, 50.0, 22.0 ],
+									"text" : "read 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"linecount" : 8,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 265.5, 276.0, 50.0, 116.0 ],
+									"text" : "49 55 53 32 32 49 55 57 32 32 48 32 32 56 56 51"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 170.0, 380.0, 71.0, 22.0 ],
+									"text" : "fromsymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 170.0, 276.0, 40.0, 22.0 ],
+									"text" : "itoa"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 170.0, 209.0, 75.0, 22.0 ],
+									"text" : "zl group 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 170.0, 168.0, 57.0, 22.0 ],
+									"text" : "sel 13 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "" ],
+									"patching_rect" : [ 170.0, 113.0, 87.0, 22.0 ],
+									"text" : "serial f 115200"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"midpoints" : [ 234.666666666666657, 456.0, 295.5, 456.0 ],
+									"source" : [ "obj-14", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"midpoints" : [ 264.0, 453.0, 359.0, 453.0 ],
+									"source" : [ "obj-14", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"midpoints" : [ 205.333333333333314, 453.0, 236.0, 453.0 ],
+									"source" : [ "obj-14", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-39", 0 ],
+									"midpoints" : [ 176.0, 447.0, 176.0, 447.0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"midpoints" : [ 217.5, 192.0, 181.0, 192.0, 181.0, 204.0, 179.5, 204.0 ],
+									"source" : [ "obj-19", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 1,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 1 ],
+									"midpoints" : [ 179.5, 261.0, 306.0, 261.0 ],
+									"order" : 0,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"order" : 1,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 1 ],
+									"midpoints" : [ 179.5, 366.0, 306.0, 366.0 ],
+									"order" : 0,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"order" : 1,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 1 ],
+									"midpoints" : [ 179.5, 417.0, 346.0, 417.0 ],
+									"order" : 0,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"midpoints" : [ 247.5, 153.0, 345.5, 153.0 ],
+									"order" : 0,
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 1 ],
+									"midpoints" : [ 247.5, 153.0, 306.0, 153.0 ],
+									"order" : 1,
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 283.5, 152.0, 82.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p serialreader"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "", "", "int" ],
+					"patching_rect" : [ 52.0, 183.0, 69.0, 22.0 ],
+					"text" : "counter 1 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 52.0, 146.0, 118.0, 22.0 ],
+					"text" : "if $i1 == 1 then bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 242.0, 115.5, 56.0, 22.0 ],
+					"text" : "metro 33"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 218.0, 367.0, 53.0, 22.0 ],
+					"text" : "jit.matrix"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 218.0, 398.0, 80.0, 60.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 218.0, 334.0, 181.0, 22.0 ],
+					"text" : "jit.gl.texture sphere @name tex1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 218.0, 54.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 218.0, 523.0, 369.0, 35.0 ],
+					"text" : "jit.gl.gridshape sphere @shape sphere @scale 5 5 5 @texture tex1 @smooth_shading 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "" ],
+					"patching_rect" : [ 275.0, 89.5, 89.0, 22.0 ],
+					"text" : "jit.world sphere"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"midpoints" : [ 61.5, 132.0, 61.5, 132.0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"midpoints" : [ 186.5, 222.0, 227.5, 222.0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"midpoints" : [ 653.9105224609375, 138.0, 587.9105224609375, 138.0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"midpoints" : [ 483.910491943359375, 300.0, 587.9105224609375, 300.0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 587.9105224609375, 453.999999867187512, 562.890105978515635, 453.999999867187512, 562.890105978515635, 300.999999867187512, 642.9105224609375, 300.999999867187512 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 227.5, 96.25, 251.5, 96.25 ],
+					"order" : 2,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 227.5, 80.0, 284.5, 80.0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"order" : 3,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 227.5, 81.0, 467.5, 81.0 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"midpoints" : [ 61.5, 175.0, 61.5, 175.0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"midpoints" : [ 21.5, 179.0, 61.5, 179.0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "image_1.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "image_2.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Image_3.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Image_4.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "IMage_5.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Image_6.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Image_7.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Image_8.jpg",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Images",
+				"patcherrelativepath" : "./Images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Button press 2_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Door open_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Door prees_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Rain_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SOE 1_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Soe2_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sound1.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sound2.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sound3.mp3",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sound4.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Walking_01.wav",
+				"bootpath" : "~/Desktop/EOfE_Coursework/Sounds",
+				"patcherrelativepath" : "./Sounds",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
+	}
+
+}
